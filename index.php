@@ -6,7 +6,7 @@
 <style>
 body
 {
-  background:url(./img/bg.jpg) no-repeat;
+  background:url(./img/1.jpeg) no-repeat;
   height:100%;
   width:100%;
   background-size:cover;
@@ -14,12 +14,16 @@ body
 </style>
 </head>
 <body >
-<div class="index_01"> 
-<table style="width: 100%;height:100%; background-color: #BC75E9;" >
+  
+<div id="index_01"> 
+<div style="position:relative;width:380;height:0"><h1 style="text-align:center;background-color:transparent;border:0;font-size:40px;top:0px;">留言板系统</h1></div>
+<table style="width:100%;height:100%;" >
+
   <tr>
     <td align="center" >
       <table align="center" width=350 height=230; class="index_table" >  
        <form method ="POST" action = "doloadling.php" name="frmLogin"> 
+     
      <tr align="center" style="font-size:25px;"> 
            <td colspan="2" style="font-size:35px;">用户登陆</td>
      </tr>

@@ -7,20 +7,16 @@
 	border-radius: 12px;
    /* border: 0px solid black;*/
 }
- body{
  
-     background-repeat: no-repeat;
- }
 .btn:hover {
     background-color: #00ff00;
 }
-.index_01{
+#index_01{
    height: 400px;width: 400px;
    margin:auto; 
    position: absolute;top: 0;
    left: 0;right: 0;bottom: 0;
-  /* border-radius: 50%; */
-   background-color: #BC75E9;/*rgba(50,150,550,0.5);*/
+   background-color: transparent;
    font-family:宋体;
 }
 div.k1 {

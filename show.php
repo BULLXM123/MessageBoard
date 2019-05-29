@@ -6,10 +6,10 @@
     <title>我的留言板.查看留言</title> 
 	<link rel="stylesheet" type="text/css" href="./css/index1.css">
     </head>  
-    <body background="./images/7.jpg" style="background-size:cover;background-attachment: fixed;" >  
+    <body background="./img/2.jpg" style="background-size:cover;background-attachment: fixed;" >  
     <center>  
-     <h2>留言板</h2>  
-     <h2>当前用户:
+     <h2 style="color:white">留言板</h2>  
+     <h2 style="color:white">当前用户:
      <?php 
       $con = @mysqli_connect("127.0.0.1","root","admin","my1");  
       if(!$con){  
@@ -17,7 +17,7 @@
       }  
       mysqli_query($con,"set names 'utf8'");  
        //显示每页的留言数  
-       $pagesize = 8;  
+       $pagesize = 4;  
        //确定页数p参数  
        @$p = $_GET['p']?$_GET['p']:1;  
        //数据指针  
@@ -47,7 +47,7 @@
 			echo "<div class='k'>";
 			echo "<div class='ds-post-main'>";
 			echo "<div class='ds-comment-body'>
-			<span>{$res['author']}  于  {$res['time']}  给我留言</span>
+			<span style='color:red;font:bold;'>{$res['author']} </span><span> 于  {$res['time']}  给我留言</span>
 			<span style='float:right'><a href = 'del.php?id=".$res['id']."'><input type='submit' class='button1' value='删除'></input></a></span>
 			<p>留言主题 : {$res['title']}   </p>
             <hr width=450px> 
@@ -58,7 +58,7 @@
 		echo "</div>";
         //分页代码  
         //计算留言总数  
-        $count_result = mysqli_query($con,"select count(*) as count from tbl_ms1 where user= '$id'");  
+        $count_result = mysqli_query($con,"select count(*) as count from tbl_ms1 where person= '$id'");  
         $count_array = mysqli_fetch_array($count_result);  
       
         //计算总的页数  

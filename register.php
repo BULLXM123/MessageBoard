@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="./css/index1.css">
 <style>
 body{
-  background:url(./img/bg.jpg) no-repeat;
+  background:url(./img/1.jpeg) no-repeat;
   height:100%;
   width:100%;
   background-size:cover;}
@@ -13,7 +13,7 @@ body{
 </head>
 <body >
 <div class="index_01" > 
-<table style="width: 100%;height:100%;background-color: #BC75E9;"" >
+<table style="width: 100%;height:100%;" >
   <tr>
     <td align="center" >
       <form action="doregister.php " name="dl" method="post">
